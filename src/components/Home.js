@@ -12,13 +12,13 @@ export const Home = () => {
 
 
     const loadTasks = async () => {
-        const result = await axios.get("http://localhost:3001/tasks");
+        const result = await axios.get("https://my-json-server.typicode.com/Aadarshbhushan-Singh/json_file/tasks");
         setTask(result.data.reverse());
 
     }
 
     const deleteTask= async uid=>{
-        await axios.delete(`http://localhost:3001/tasks/${uid}`);
+        await axios.delete(`https://my-json-server.typicode.com/Aadarshbhushan-Singh/json_file/tasks/${uid}`);
         loadTasks();
     }
     return (

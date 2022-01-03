@@ -21,7 +21,7 @@ export const AddTask = () => {
 
     const onSubmit = async e => {
         e.preventDefault();
-        await axios.post("http://localhost:3001/tasks", task);
+        await axios.post("https://my-json-server.typicode.com/Aadarshbhushan-Singh/json_file/tasks", task);
         history.push("/");
     };
     return (

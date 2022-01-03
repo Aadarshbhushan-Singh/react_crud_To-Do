@@ -26,12 +26,12 @@ export const EditTask = () => {
 
     const onSubmit = async e => {
         e.preventDefault();
-        await axios.put(`http://localhost:3001/tasks/${uid}`, task);
+        await axios.put(`https://my-json-server.typicode.com/Aadarshbhushan-Singh/json_file/tasks/${uid}`, task);
         history.push("/");
     };
 
     const loadUser = async ()=>{
-        const result=await axios.get(`http://localhost:3001/tasks/${uid}`);
+        const result=await axios.get(`https://my-json-server.typicode.com/Aadarshbhushan-Singh/json_file/tasks/${uid}`);
         setTask(result.data);
     }
     return (

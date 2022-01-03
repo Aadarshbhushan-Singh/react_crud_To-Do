@@ -23,7 +23,7 @@ export const ViewTask = () => {
 
     
     const loadUser = async ()=>{
-        const result=await axios.get(`http://localhost:3001/tasks/${uid}`);
+        const result=await axios.get(`https://my-json-server.typicode.com/Aadarshbhushan-Singh/json_file/tasks/${uid}`);
         setTask(result.data);
     }
     return (
